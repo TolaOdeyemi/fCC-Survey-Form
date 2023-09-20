@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>The Bookish Baddie Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap">
+  </head>
+  <body>
+    <h1 id="title">The Bookish Baddie Survey</h1>
+    <p id="description">Please fill out this survey so we can determine the reading habbits of our Bookish Baddie Subscribers!</p>
+    <form id="survey-form">
+    <fieldset>
+        <label id="name-label">Enter Your Full Name: <input id="name" type="text" placeholder="Name" required></label>
+      </fieldset>
+      <fieldset>
+        <label id="email-label">Enter Your Email Address: <input id="email" type="email" placeholder="Email" required></label>
+      </fieldset>
+      <fieldset>
+        <label id="number-label">Enter Your Age: <input type="number" min="16" max="120" id="number" placeholder="Age" required></label>
+      </fieldset>
+      <fieldset>
+        <label>How Many Books Do You Read Weekly?
+          <select id="dropdown" name="dropdown">
+            <option>(select one)</option>
+            <option>None</option>
+            <option>1-5</option>
+            <option>5-10</option>
+            <option>10+</option>
+            </label></select>
+      </fieldset>
+      <label id="label-radio">Would You Use Bookish Baddie Services To Find Your Next Read?</label>
+      <label id="Absolutely"><input type="radio" value="Absolutely" name="use">Absolutely</label>
+      <label id="Maybe"><input type="radio" value="Maybe" name="use">Maybe</label>
+      <label id="No"><input type="radio" value="No" name="use">No</label>
+      <label>What Is Your Favourite Feauture Of Bookish Baddie FC?
+          <select id="dropdown-feauture" name="dropdown">
+            <option value="">Select Your Favourite Feauture</option>
+            <option value="1">Personalised Book Reccomendations</option>
+            <option value="2">Book Box Subscription</option>
+            <option value="3">In Person Cocktail Events</option>
+            <option value="4">Community Forum</option>
+    </select>
+
+      <label id="label-checkbox">What Would You Like Added To Bookish Baddie FC?(check all that apply)</label>
+      <input type="checkbox" name="added" value="1"><label>Android App</label>
+       <input type="checkbox" name="added" value="2"><label>Personalised Group Chat</label>
+        <input type="checkbox" name="added" value="3"><label>Automatic Storygraph Syncing</label>
+         <input type="checkbox" name="added" value="4"><label>More Exclusive Author Signings</label>
+          <input type="checkbox" name="added" value="5"><label>Additional In-Person Events</label>
+          <input type="checkbox" name="added" value="6"><label>Improved IOS App</label> 
+<br>
+      <label id="label-textarea">Please Leave Any Additional Comments Here</label>
+      <textarea name="textarea" placeholder="Enter Additional Comments Here"></textarea>
+      <br>
+  <input id="submit" value="Submit" type="submit"/>
+</form>
+</body>
+</html>
